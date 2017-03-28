@@ -19,11 +19,11 @@ It’s up to you !!
 - Linter
     - `eslint`
 - Test Assertion
-    - `power-assert`
+    - `power-assert` (via `ava`)
 - Test Framework
     - `ava`
 - Test Coverage
-    - WIP ...
+    - `nyc`
 
 ## :copyright: License
 
