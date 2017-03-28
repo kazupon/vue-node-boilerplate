@@ -1,17 +1,15 @@
-# vue-node-boilerplate
-
-[![CircleCI](https://circleci.com/gh/kazupon/vue-plugin-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/kazupon/vue-plugin-boilerplate/tree/master)
+# :turtle: vue-node-boilerplate
 
 Boilerplate for Vue related projects at Node environment
 
-## Usage
+## :rocket: Usage
 
     $ npm i -g vue-cli
     $ vue init kazupon/vue-node-boilerplate vue-app-project
 
 It’s up to you !!
 
-## Using tools
+## :hammer: Using tools
 - Transpiler / Compiler
     - babel
 - Type Checker
@@ -25,6 +23,6 @@ It’s up to you !!
 - Test Coverage
     - istanbul
 
-# License
+# :copyright: License
 
 [MIT](http://opensource.org/licenses/MIT)
