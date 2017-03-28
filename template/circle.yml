@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 4
+{{#coverage}}
+test:
+  post:
+    - npm run coverage && bash <(curl -s https://codecov.io/bash)
+{{/coverage}}

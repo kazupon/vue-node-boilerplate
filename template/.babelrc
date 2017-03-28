@@ -1,0 +1,10 @@
+{
+  "presets": ["es2015"],
+  "plugins": [{{#flow}}"syntax-flow", "transform-flow-strip-types", {{/flow}}"babel-plugin-espower"],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"],
+      "presets": ["power-assert"]
+    }
+  }
+}

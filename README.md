@@ -1,27 +1,27 @@
 # :turtle: vue-node-boilerplate
 
-Boilerplate for Vue related projects at Node environment
+Node.js project Boilerplate with vue-cli
 
 ## :rocket: Usage
 
     $ npm i -g vue-cli
-    $ vue init kazupon/vue-node-boilerplate vue-app-project
+    $ vue init kazupon/vue-node-boilerplate node-project
 
 It’s up to you !!
 
 ## :hammer: Using tools
 - Transpiler / Compiler
-    - babel
+    - `babel`
 - Type Checker
-    - flowtype
+    - `flowtype`
 - Linter
-    - eslint
+    - `eslint`
 - Test Assertion
-    - power-assert
+    - `power-assert`
 - Test Framework
-    - AVA
+    - `ava`
 - Test Coverage
-    - istanbul
+    - WIP ...
 
 # :copyright: License
 

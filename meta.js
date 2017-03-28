@@ -12,7 +12,7 @@ module.exports = {
       type: 'string',
       required: false,
       message: 'Project description',
-      default: 'A Vue.js app project'
+      default: 'Node app project'
     },
     version: {
       type: 'string',
@@ -35,9 +35,65 @@ module.exports = {
       required: false,
       message: 'GitHub Account',
       default: githubAccountDefault
+    },
+    flow: {
+      type: 'confirm',
+      message: 'Setup flowtype?'
+    },
+    coverage: {
+      type: 'confirm',
+      message: 'Setup coverage services?'
+    },
+    ci: {
+      type: 'confirm',
+      message: 'Setup CI services?'
+    },
+    ciConfig: {
+      when: 'ci',
+      type: 'list',
+      message: 'Choice a CI service',
+      choices: [
+        'travis',
+        'circleci'
+      ],
+      default: ['circleci']
+    },
+    conventional: {
+      type: 'confirm',
+      message: 'Setup conventional-changelog tasks?'
+    },
+    conventionalConfig: {
+      when: 'conventional',
+      type: 'list',
+      message: 'Choice a conventional-changelog preset',
+      choices: [
+        { name: 'none (configure it youreself)', value: 'none' },
+        { name: 'angular', value: 'angular' },
+        { name: 'atom', value: 'atom' },
+        { name: 'codemirror', value: 'codemirror' },
+        { name: 'ember', value: 'ember' },
+        { name: 'eslint', value: 'eslint' },
+        { name: 'express', value: 'express' },
+        { name: 'jquery', value: 'jquery' },
+        { name: 'jshint', value: 'jshint' }
+      ]
+    },
+    issue: {
+      type: 'confirm',
+      message: 'Setup issue guide?'
+    },
+    contribution: {
+      type: 'confirm',
+      message: 'Setup contribution guide?'
     }
   },
   filters: {
+    ".travis.yml": "ciConfig === 'travis'",
+    "circle.yml": "ciConfig === 'circleci'",
+    ".flowconfig": 'flow',
+    "decls/*": 'flow',
+    ".github/ISSUE_TEMPLATE.md": 'issue',
+    "CONTRIBUTING.md": "contribution"
   },
   helpers: {
     nowYear: function () {
