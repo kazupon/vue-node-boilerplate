@@ -1,3 +1,13 @@
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/kazupon/vue-node-boilerplate/compare/v0.2.0...v0.2.1) (2017-03-28)
+
+
+### :zap: Improvements
+
+* **coverage:** avoid nyc error ([0f88791](https://github.com/kazupon/vue-node-boilerplate/commit/0f88791))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/kazupon/vue-node-boilerplate/compare/v0.1.0...v0.2.0) (2017-03-28)
 
