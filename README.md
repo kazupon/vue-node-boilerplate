@@ -1,5 +1,7 @@
 # :turtle: vue-node-boilerplate
 
+[![CircleCI](https://circleci.com/gh/kazupon/vue-node-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/kazupon/vue-node-boilerplate/tree/master)
+
 Node.js project Boilerplate with vue-cli
 
 ## :rocket: Usage
@@ -23,6 +25,6 @@ It’s up to you !!
 - Test Coverage
     - WIP ...
 
-# :copyright: License
+## :copyright: License
 
 [MIT](http://opensource.org/licenses/MIT)
