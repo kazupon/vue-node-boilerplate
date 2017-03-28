@@ -1,7 +1,7 @@
 {
   "name": "vue-node-boilerplate",
   "description": "Boilerplate for Vue related projects at Node environment",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "bugs": {
     "url": "https://github.com/kazupon/vue-node-boilerplate/issues"
   },
