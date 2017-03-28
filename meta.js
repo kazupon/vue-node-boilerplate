@@ -48,16 +48,6 @@ module.exports = {
       type: 'confirm',
       message: 'Setup CI services?'
     },
-    ciConfig: {
-      when: 'ci',
-      type: 'list',
-      message: 'Choice a CI service',
-      choices: [
-        'travis',
-        'circleci'
-      ],
-      default: ['circleci']
-    },
     conventional: {
       type: 'confirm',
       message: 'Setup conventional-changelog tasks?'
@@ -88,8 +78,7 @@ module.exports = {
     }
   },
   filters: {
-    ".travis.yml": "ciConfig === 'travis'",
-    "circle.yml": "ciConfig === 'circleci'",
+    "circle.yml": "ci",
     ".flowconfig": 'flow',
     "decls/*": 'flow',
     ".github/ISSUE_TEMPLATE.md": 'issue',

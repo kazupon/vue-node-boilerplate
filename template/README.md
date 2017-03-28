@@ -1,7 +1,7 @@
 # {{ name }}
 
-{{#if_eq coverageConfig "coveralls"}}[![Coverage Status](https://coveralls.io/repos/github/{{ githubAccount }}/{{ name }}/badge.svg?branch={{ branch }})](https://coveralls.io/github/{{ githubAccount }}/{{ name }}?branch={{ branch }}){{/if_eq}}
-{{#if_eq coverageConfig "codecov"}}[![codecov](https://codecov.io/gh/{{ githubAccount }}/{{ name }}/branch/{{ branch }}/graph/badge.svg)](https://codecov.io/gh/{{ githubAccount }}/{{ name }}){{/if_eq}}
+[![CircleCI](https://circleci.com/gh/{{ githubAccount }}/{{ name }}/tree/{{ branch }}?style=svg)](https://circleci.com/gh/{{ githubAccount }}/{{ name }}/tree/{{ branch }})
+{{#coverage}}[![codecov](https://codecov.io/gh/{{ githubAccount }}/{{ name }}/branch/{{ branch }}/graph/badge.svg)](https://codecov.io/gh/{{ githubAccount }}/{{ name }}){{/coverage}}
 [![npm](https://img.shields.io/npm/v/{{ name }}.svg)](https://www.npmjs.com/package/{{ name }})
 
 {{ description }}

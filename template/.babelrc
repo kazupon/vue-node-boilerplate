@@ -1,10 +1,12 @@
 {
-  "presets": ["es2015"],
-  "plugins": [{{#flow}}"syntax-flow", "transform-flow-strip-types", {{/flow}}"babel-plugin-espower"],
+  "presets": ["es2015"],{{#flow}}
+  "plugins": ["syntax-flow", "transform-flow-strip-types"],{{/flow}}
   "env": {
+    "development": {
+      "sourceMaps": "inline"
+    },
     "test": {
-      "plugins": ["istanbul"],
-      "presets": ["power-assert"]
+      "sourceMaps": "inline"
     }
   }
 }
